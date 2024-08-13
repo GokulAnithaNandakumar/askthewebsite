@@ -16,6 +16,12 @@ export default function Home() {
   };
 
   return (
+    <>
+    <head>
+    <title>Ask Wiki</title>
+    <link rel="icon" href="/icon.png" />
+    </head>
+    
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-r from-blue-400 to-purple-600">
       <form
         onSubmit={handleSubmit}
@@ -39,5 +45,6 @@ export default function Home() {
         </button>
       </form>
     </div>
+    </>
   );
 }
