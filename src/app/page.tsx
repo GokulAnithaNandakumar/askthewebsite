@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
+import Logo from "./icon.png"
+
 export default function Home() {
   const [inputValue, setInputValue] = useState("");
   const router = useRouter();
@@ -19,7 +21,7 @@ export default function Home() {
     <>
     <head>
     <title>Ask Wiki</title>
-    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="icon" type="image/png" href={Logo.src} />
     </head>
     
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-r from-blue-400 to-purple-600">
